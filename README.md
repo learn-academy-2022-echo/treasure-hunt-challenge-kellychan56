@@ -11,8 +11,14 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 
 - (board-game) As a user, I can see a page with a three by three grid board game with a question mark in each square.
     - created a 3x3 board with question marks inside a div
-    - 
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+        - mapped over Square component to dynamically make a square 9 times
+        - used flex to make the 3x3 game board
+        - passed value from array in state to Square
+- (index-position) As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+    - passed index to Square
+    - created handleClick in Square
+    - created handleGamePlay in App.js
+    - got access to index in App.js via functional props
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
